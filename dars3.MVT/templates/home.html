@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+    {% block content %}
+    <h1>Bosh sahifa</h1>
+    <ul>
+        {% for post in object_list %}
+        <li>
+            <h3>{{ post.title }}</h3>
+            {{ post.text }}
+        </li>
+        {% endfor %}
+    </ul>
+     {% endblock content %}
